@@ -1,0 +1,287 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f7f9;
+  --color-text: #1c1f24;
+  --color-text-muted: #5b6169;
+  --color-border: #e3e5e8;
+  --color-accent: #2f6fed;
+  --color-accent-dark: #1f4fb0;
+  --color-badge-live: #1e8e5a;
+  --color-badge-soon: #b26a00;
+  --max-width: 880px;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+    "Segoe UI", Roboto, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 20px 0;
+}
+
+header.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+nav.site-nav a {
+  margin-left: 20px;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+nav.site-nav a:hover {
+  color: var(--color-accent);
+}
+
+.hero {
+  padding: 72px 0 56px;
+  border-bottom: 1px solid var(--color-border);
+  background: linear-gradient(180deg, var(--color-bg-alt), var(--color-bg));
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin: 0 0 14px;
+  letter-spacing: 0.01em;
+}
+
+.hero p {
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+  max-width: 640px;
+  margin: 0;
+}
+
+section {
+  padding: 56px 0;
+}
+
+section + section {
+  border-top: 1px solid var(--color-border);
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin: 0 0 28px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .app-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.app-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.app-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: cover;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.badge.live {
+  background: rgba(30, 142, 90, 0.12);
+  color: var(--color-badge-live);
+}
+
+.badge.soon {
+  background: rgba(178, 106, 0, 0.12);
+  color: var(--color-badge-soon);
+}
+
+.platform-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.app-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+}
+
+.app-card .platforms {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.app-links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.about-list {
+  padding-left: 1.1em;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+.contact-box {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: var(--color-bg-alt);
+}
+
+.contact-box p {
+  margin: 0 0 8px;
+}
+
+.contact-box .email {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 28px 0 40px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+footer.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer.site-footer a {
+  color: var(--color-text-muted);
+}
+
+.doc-page section {
+  padding: 40px 0;
+}
+
+.doc-page h1 {
+  font-size: 1.6rem;
+  margin: 40px 0 8px;
+}
+
+.doc-page .lead {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+table.tokushoho {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table.tokushoho th,
+table.tokushoho td {
+  text-align: left;
+  padding: 14px 12px;
+  border-top: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+table.tokushoho th {
+  width: 32%;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.placeholder {
+  color: var(--color-badge-soon);
+  background: rgba(178, 106, 0, 0.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 0.9rem;
+}

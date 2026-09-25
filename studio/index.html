@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sieqxeon Studio</title>
+<meta name="description" content="Sieqxeon Studioは、iOS/Androidアプリを開発・提供する個人開発スタジオです。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Sieqxeon Studio</div>
+    <nav class="site-nav">
+      <a href="#apps">アプリ</a>
+      <a href="#about">概要</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="en/index.html">English</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Sieqxeon Studio</h1>
+    <p>音声認識やリアルタイム位置共有など、日常の「ちょっと便利」を形にするアプリを一つひとつ丁寧に作っています。</p>
+  </div>
+</section>
+
+<section id="apps">
+  <div class="wrap">
+    <h2>提供アプリ</h2>
+    <div class="app-grid">
+
+      <div class="app-card">
+        <div class="app-head">
+          <img src="images/haguren-icon.png" alt="Hagurenのアイコン" class="app-icon">
+          <h3>Haguren</h3>
+        </div>
+        <span class="badge live">リリース済み</span>
+        <p class="platforms">iOS / Android（現在、日本国内のみ対応）</p>
+        <p>友人・家族とリアルタイムに位置情報を共有できるアプリです。目的地の提案やチャット、ナビゲーション機能を通じて、待ち合わせや移動をスムーズにします。</p>
+        <div class="app-links">
+          <a href="../privacy-policy/haguren.html">プライバシーポリシー</a>
+          <!-- TODO: App Store / Google Play の実際のURLに差し替えてください -->
+          <a href="#" aria-disabled="true">App Store（準備中リンク）</a>
+          <a href="#" aria-disabled="true">Google Play（準備中リンク）</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-head">
+          <img src="images/voice-word-count-icon.png" alt="音声カウンターのアイコン" class="app-icon">
+          <h3>音声カウンター</h3>
+        </div>
+        <div class="platform-status">
+          <span class="badge live">iOS：リリース済み</span>
+          <span class="badge soon">Android：準備中</span>
+        </div>
+        <p>リアルタイム音声認識で発話中の単語数を自動計測する、ハンズフリー操作対応のアプリです。プレゼンや会話の練習、発話量の記録などに活用できます。</p>
+        <div class="app-links">
+          <!-- 既存の登録済みプライバシーポリシーURL（App Store Connect / Google Play Console登録済み）をそのまま使用しています -->
+          <a href="../index.html">アプリ情報・プライバシーポリシー</a>
+          <!-- TODO: App Storeの実際のURLに差し替えてください（iOSはリリース済み） -->
+          <a href="#" aria-disabled="true">App Store（準備中リンク）</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Sieqxeon Studioについて</h2>
+    <ul class="about-list">
+      <li>屋号：Sieqxeon Studio</li>
+      <li>事業内容：モバイルアプリケーション（iOS / Android）の企画・開発・運営</li>
+      <li>開発体制：個人事業として運営</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p>アプリに関するご質問・ご要望、取材・お仕事のご相談などは、以下のメールアドレスまでお願いいたします。</p>
+      <p class="email"><a href="mailto:sieqxeon@gmail.com">sieqxeon@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Sieqxeon Studio</span>
+    <a href="mailto:sieqxeon@gmail.com">お問い合わせ</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

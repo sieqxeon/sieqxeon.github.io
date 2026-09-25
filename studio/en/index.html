@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sieqxeon Studio</title>
+<meta name="description" content="Sieqxeon Studio is an independent mobile app studio building iOS and Android apps.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Sieqxeon Studio</div>
+    <nav class="site-nav">
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="../index.html">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Sieqxeon Studio</h1>
+    <p>We focus on small, useful tools for everyday life, from real-time voice recognition to live location sharing.</p>
+  </div>
+</section>
+
+<section id="apps">
+  <div class="wrap">
+    <h2>Apps</h2>
+    <div class="app-grid">
+
+      <div class="app-card">
+        <div class="app-head">
+          <img src="../images/haguren-icon.png" alt="Haguren app icon" class="app-icon">
+          <h3>Haguren</h3>
+        </div>
+        <span class="badge live">Released</span>
+        <p class="platforms">iOS / Android (currently available in Japan only)</p>
+        <p>Share your live location with friends and family in real time. Haguren also suggests meeting spots, includes in-app chat, and helps you navigate to each other.</p>
+        <div class="app-links">
+          <a href="../../privacy-policy/haguren.html">Privacy Policy</a>
+          <!-- TODO: replace with the real App Store / Google Play URLs -->
+          <a href="#" aria-disabled="true">App Store (coming soon)</a>
+          <a href="#" aria-disabled="true">Google Play (coming soon)</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-head">
+          <img src="../images/voice-word-count-icon.png" alt="Voice Word Count app icon" class="app-icon">
+          <h3>Voice Word Count</h3>
+        </div>
+        <div class="platform-status">
+          <span class="badge live">iOS: Released</span>
+          <span class="badge soon">Android: Coming soon</span>
+        </div>
+        <p>Voice Word Count automatically counts the words you speak using real-time voice recognition, with hands-free operation. Useful for practicing presentations, tracking conversations, and more.</p>
+        <div class="app-links">
+          <!-- Uses the existing privacy policy URL already registered with App Store Connect / Google Play Console -->
+          <a href="../../index.html">App Info &amp; Privacy Policy</a>
+          <a href="#" aria-disabled="true">App Store (coming soon)</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About Sieqxeon Studio</h2>
+    <ul class="about-list">
+      <li>Business name: Sieqxeon Studio</li>
+      <li>What we do: planning, development, and operation of mobile apps for iOS and Android</li>
+      <li>Structure: run as an independent (sole proprietor) business based in Japan</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p>For questions, feedback, or business inquiries, please reach us at the email address below.</p>
+      <p class="email"><a href="mailto:sieqxeon@gmail.com">sieqxeon@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Sieqxeon Studio</span>
+    <a href="mailto:sieqxeon@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
